@@ -1,3 +1,4 @@
+//thunk provee el dispatch para peticiones asincrobas
 //Acciones del login
 import { types } from '../types/types';
 import { firebase, googleAuthProvider } from '../firebase/firebase-config';
@@ -57,4 +58,17 @@ export const login = (uid, displayName) => ({
         uid,
         displayName
     }
+});
+
+
+export const startLogout = () => {
+    return async ( dispatch ) => {
+        await firebase.auth().signOut();
+
+        dispatch( logout() );
+    }
+}
+
+export const logout = () => ({
+    type: types.logout
 })

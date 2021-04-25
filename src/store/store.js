@@ -1,5 +1,6 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk'; //Middleware para acciones asincronas
+//thunk provee el dispatch para peticiones asincrobas
 
 import { authReducer } from '../reducer/authReducer';
 import { uiReducer } from '../reducer/uiReducer';
