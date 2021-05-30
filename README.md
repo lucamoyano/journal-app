@@ -18,3 +18,10 @@ Aplicación para crear notas
 - Google SingIn
 - Acciones Asíncronas
 - Mantener el estado de la autenticación
+
+# _3- CRUD en Firestore y subida de archivos_
+- CRUD hacia Firestore
+- Expandiendo nuestro estore añadiendo otros reducers
+- Seleccionar y subir archivos
+- Animaciones adicionales a nuestra aplicación
+- Limpieza en el logout
